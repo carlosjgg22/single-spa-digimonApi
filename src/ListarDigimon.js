@@ -20,7 +20,7 @@ const ListarDigimon = () => {
         <Row gutter={3}>
           <Col span={2}>
             <Card
-              key={index}
+              key={digimon.id}
               title={digimon.name}
               hoverable
               style={{
@@ -28,7 +28,7 @@ const ListarDigimon = () => {
                 margin: 10,
               }}
               cover={
-                <img alt={digimon.image} src={digimon.image} key={index} />
+                <img alt={digimon.image} src={digimon.image} key={digimon.id} />
               }
             >
               {<Meta key={index} description={digimon.href} />}
